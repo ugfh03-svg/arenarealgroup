@@ -1,7 +1,0 @@
-Поставь свои ID в двух файлах: index.html и ads.html
-
-1) GA4: замени G-XXXXXXXXXX на свой GA4 Measurement ID
-2) Meta Pixel: замени 000000000000000 на свой Pixel ID
-3) TikTok Pixel: замени CXXXXXXXXXXXXXXX на свой Pixel ID
-
-Также замени canonical URL (your-domain.com) в index.html/ads.html/sitemap.xml/robots.txt на реальный домен.
