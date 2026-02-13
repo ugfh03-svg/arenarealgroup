@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<link rel="canonical" href="https://your-domain.com/">
+<meta name="description" content="Premium real estate in Dubai: curated selection, areas, map, full deal support. RU/EN, AED/USD.">
+<meta name="keywords" content="Dubai real estate, villas, apartments, Palm Jumeirah, Dubai Marina, Downtown, Business Bay, DIFC, investment, off-plan, secondary">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ARENA REAL GROUP">
+<meta property="og:title" content="ARENA REAL GROUP — Premium Real Estate Dubai">
+<meta property="og:description" content="Premium real estate in Dubai: curated selection, areas, map, full deal support. RU/EN, AED/USD.">
+<meta property="og:url" content="https://your-domain.com/">
+<meta property="og:image" content="https://your-domain.com/icon-512.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ARENA REAL GROUP — Premium Real Estate Dubai">
+<meta name="twitter:description" content="Premium real estate in Dubai: curated selection, areas, map, full deal support. RU/EN, AED/USD.">
+<meta name="twitter:image" content="https://your-domain.com/icon-512.png">
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>ARENA REAL GROUP — Premium Real Estate Dubai</title>
+<link rel="icon" type="image/png" href="favicon.png">
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0b0e14">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ARENA REAL GROUP">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<style>
+:root{
+  --bg:#0b0e14;
+  --card:#121826;
+  --gold1:#f0d79a;
+  --gold2:#d6b36b;
+  --text:#ffffff;
+  --muted:#9aa3b2;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+}
+.container{max-width:1200px;margin:auto;padding:20px;}
+nav{
+  display:flex;justify-content:space-between;align-items:center;gap:12px;
+  padding:16px 18px;
+  background:rgba(15,20,32,.92);
+  position:sticky;top:0;z-index:100;
+  border-bottom:1px solid rgba(255,255,255,.08);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+.brand{font-weight:900;letter-spacing:.8px;display:flex;align-items:center;gap:10px}
+.badge{
+  width:34px;height:34px;border-radius:14px;
+  background:linear-gradient(135deg,var(--gold1),var(--gold2));
+  display:flex;align-items:center;justify-content:center;
+  color:#141822;font-weight:1000;
+}
+.controls{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+button{
+  background:#1a2233;border:1px solid #2a3246;color:#fff;
+  padding:8px 12px;border-radius:999px;cursor:pointer;
+  font-weight:900;min-height:40px;
+}
+button.active{
+  background:linear-gradient(135deg,var(--gold1),var(--gold2));
+  color:#000;border-color:rgba(0,0,0,.15);
+}
+.hero{
+  padding:64px 18px 54px;
+  text-align:center;
+  background:linear-gradient(180deg,#101728,#0b0e14);
+}
+.hero h1{font-size:40px;margin-bottom:14px;line-height:1.12}
+.hero p{color:var(--muted);max-width:820px;margin:0 auto;font-weight:650}
+.section{padding:34px 0 52px}
+.h2{font-size:26px;margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin-top:12px}
+.card{
+  background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+  border:1px solid rgba(255,255,255,.10);
+  padding:18px;border-radius:18px;
+}
+.card h3{font-size:16px;letter-spacing:.2px}
+.meta{margin-top:8px;color:var(--muted);font-weight:700;font-size:13px}
+.price{font-size:22px;font-weight:1000;margin-top:10px;color:var(--gold1)}
+.cta{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+a.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:12px 16px;border-radius:14px;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.06);
+  color:#fff;text-decoration:none;font-weight:1000;min-height:44px
+}
+a.btn.primary{
+  background:linear-gradient(135deg,var(--gold1),var(--gold2));
+  color:#141822;border-color:rgba(0,0,0,.15);
+}
+footer{
+  text-align:center;padding:26px 16px 40px;
+  color:var(--muted);font-size:13.5px;
+  border-top:1px solid rgba(255,255,255,.08);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) { nav{background:#0f1420} }
+@media(max-width:600px){ .hero h1{font-size:30px} .controls button{min-height:38px} }
+
+/* Area chips */
+.filters{display:flex; gap:10px; flex-wrap:nowrap; overflow-x:auto; -webkit-overflow-scrolling:touch; padding:10px 2px 4px; margin-bottom:12px;}
+.filters::-webkit-scrollbar{display:none;}
+.chip{
+  border:1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.06);
+  color: rgba(255,255,255,.92);
+  padding:10px 12px;
+  border-radius:999px;
+  font-weight:900;
+  white-space:nowrap;
+  cursor:pointer;
+}
+.chip.active{
+  background: linear-gradient(135deg, rgba(240,215,154,.96), rgba(214,179,107,.96));
+  color:#141822;
+  border-color: rgba(0,0,0,.15);
+}
+.map-actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px; justify-content:flex-start}
+.map-actions a{font-size:13px}
+
+
+/* Browser compatibility improvements */
+html, body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+button, a {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media (hover: none) {
+  button:hover { background: inherit; }
+}
+
+img, iframe {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Photos: area gallery + property thumbnails */
+.gallery{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap:12px;
+  margin-top:12px;
+}
+.g-item{
+  text-align:left;
+  padding:0;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.04);
+  cursor:pointer;
+}
+.g-item img{display:block; width:100%; height:140px; object-fit:cover;}
+.g-cap{padding:10px 12px; font-weight:900; color:rgba(255,255,255,.92); font-size:13px; line-height:1.25;}
+.pimg{
+  width:100%;
+  height:150px;
+  object-fit:cover;
+  border-radius:14px;
+  margin-bottom:10px;
+  border:1px solid rgba(255,255,255,.08);
+}
+@media(max-width:560px){
+  .g-item img{height:150px}
+  .pimg{height:170px}
+}
+
+
+/* Area preview */
+#areaPreviewImg{height:260px}
+@media(max-width:560px){
+  #areaPreviewImg{height:240px}
+}
+
+
+/* Omni responsive + cross-browser */
+html, body { width:100%; max-width:100%; overflow-x:hidden; }
+body{
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+/* Better tap targets */
+button, a { -webkit-tap-highlight-color: rgba(0,0,0,0); }
+button { touch-action: manipulation; }
+a.btn, button { min-height:44px; }
+/* Fluid typography */
+.hero h1{ font-size: clamp(26px, 5vw, 42px); }
+.h2{ font-size: clamp(20px, 3.6vw, 28px); }
+/* Cards grid: more stable breakpoints */
+.cards, .gallery{
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+@media(max-width:420px){
+  nav{padding:14px 14px}
+  .controls{gap:6px}
+  button{padding:8px 10px}
+  .cards, .gallery{ grid-template-columns: 1fr; }
+}
+/* Map iframe height responsive */
+#map iframe{ height: min(62vh, 620px); }
+@media(max-width:560px){
+  #map iframe{ height: min(56vh, 520px); }
+}
+/* Image sizing safe */
+img{ max-width:100%; height:auto; }
+/* Prevent iOS momentum weirdness */
+.filters{ scrollbar-width:none; }
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "name": "ARENA REAL GROUP",
+      "url": "https://your-domain.com/",
+      "logo": "https://your-domain.com/icon-512.png",
+      "sameAs": [
+        "https://www.instagram.com/yourprofile",
+        "https://www.tiktok.com/@yourprofile"
+      ],
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+971501234567",
+          "contactType": "sales",
+          "areaServed": "AE",
+          "availableLanguage": [
+            "ru",
+            "en"
+          ]
+        }
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "name": "ARENA REAL GROUP",
+      "url": "https://your-domain.com/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-domain.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  ]
+}
+</script>
+
+<link rel="preconnect" href="https://www.google.com">
+<link rel="dns-prefetch" href="https://www.google.com">
+<link rel="preconnect" href="https://maps.google.com">
+<link rel="dns-prefetch" href="https://maps.google.com">
+
+
+<!-- Analytics (placeholders): replace IDs below -->
+<script>
+  // GA4
+  window.ARENA_GA4_ID = "G-XXXXXXXXXX";
+  // Meta Pixel
+  window.ARENA_META_PIXEL_ID = "000000000000000";
+  // TikTok Pixel
+  window.ARENA_TIKTOK_PIXEL_ID = "CXXXXXXXXXXXXXXX";
+</script>
+
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+</script>
+
+<!-- Meta Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '000000000000000');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=000000000000000&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- TikTok Pixel -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];
+  ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))};};
+  for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+  ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e;};
+  ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=i;ttq._t=ttq._t||{};ttq._t[e]=+new Date;ttq._o=ttq._o||{};ttq._o[e]=n||{};
+  var o=document.createElement("script");o.type="text/javascript";o.async=!0;o.src=i+"?sdkid="+e+"&lib="+t;
+  var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a);};
+  ttq.load('CXXXXXXXXXXXXXXX');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+
+</head>
+<body>
+
+<nav>
+  <a href="#" class="brand" id="logoHome"><div class="badge">AR</div><div>ARENA REAL GROUP</div></a>
+  <div class="controls">
+    <button id="ruBtn" class="active">RU</button>
+    <button id="enBtn">EN</button>
+    <button id="aedBtn" class="active">AED</button>
+    <button id="usdBtn">USD</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1 id="title">Премиальная недвижимость в Дубае</h1>
+  <p id="subtitle">Подбор, переговоры, сопровождение сделки и инвестиционные решения.</p>
+  <div class="cta">
+    <a class="btn primary" href="#" id="callBtn">Contact Manager</a>
+    <a class="btn" href="#map" id="viewBtn">View Properties</a>
+  </div>
+</section>
+
+
+<section class="container section" id="map">
+  <div class="h2" id="mapTitle">Dubai Map</div>
+  
+<div id="mapPick" class="meta" style="margin-top:8px;">Popular Areas</div>
+<div class="filters" id="areaChips">
+  <button class="chip" type="button" data-area="Downtown Dubai">Downtown Dubai</button>
+  <button class="chip" type="button" data-area="Dubai Marina">Dubai Marina</button>
+  <button class="chip" type="button" data-area="Palm Jumeirah">Palm Jumeirah</button>
+  <button class="chip" type="button" data-area="JBR">JBR (Jumeirah Beach Residence)</button>
+  <button class="chip" type="button" data-area="Business Bay">Business Bay</button>
+  <button class="chip" type="button" data-area="DIFC">DIFC</button>
+  <button class="chip" type="button" data-area="Jumeirah">Jumeirah</button>
+  <button class="chip" type="button" data-area="Bluewaters Island">Bluewaters Island</button>
+  <button class="chip" type="button" data-area="Dubai Hills Estate">Dubai Hills Estate</button>
+  <button class="chip" type="button" data-area="Arabian Ranches">Arabian Ranches</button>
+  <button class="chip" type="button" data-area="Emirates Hills">Emirates Hills</button>
+  <button class="chip" type="button" data-area="Jumeirah Village Circle">JVC (Jumeirah Village Circle)</button>
+  <button class="chip" type="button" data-area="Jumeirah Lake Towers">JLT (Jumeirah Lake Towers)</button>
+  <button class="chip" type="button" data-area="Dubai Creek Harbour">Dubai Creek Harbour</button>
+</div>
+<div class="card" style="padding:0; overflow:hidden">
+    <iframe
+      title="Dubai Map"
+      width="100%"
+      height="560"
+      style="border:0; display:block"
+      loading="lazy"
+      allowfullscreen
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://www.google.com/maps?q=Dubai%2C%20UAE&z=11&output=embed">
+    </iframe>
+  </div>
+
+  <div class="map-actions">
+    <button class="btn" type="button" id="myLocBtn" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);color:#fff">My Location</button>
+    <a class="btn" id="openMapsBtn" href="https://www.google.com/maps?q=Dubai%2C%20UAE" target="_blank" rel="noopener">Открыть в Google Maps</a>
+  </div>
+
+</section>
+
+<section class="container section" id="listings">
+  <div class="meta" id="listingsSub" style="margin-bottom:8px">—</div>
+  <div class="h2" id="listingsTitle">Properties</div>
+  <div class="cards" id="propertyGrid">
+    <div class="card">
+      <img class="pimg" src="assets/property_1.png" alt="Downtown 2BR" loading="lazy">
+      <h3>Downtown • 2BR</h3>
+      <div class="meta">Burj view • Parking • Amenities</div>
+      <div class="price" data-aed="4950000">4,950,000 AED</div>
+    </div>
+    <div class="card">
+      <img class="pimg" src="assets/property_2.png" alt="Palm Villa" loading="lazy">
+      <h3>Palm Jumeirah • Villa</h3>
+      <div class="meta">Private beach • Gated • Luxury</div>
+      <div class="price" data-aed="28900000">28,900,000 AED</div>
+    </div>
+    <div class="card">
+      <img class="pimg" src="assets/property_3.png" alt="Marina Studio" loading="lazy">
+      <h3>Dubai Marina • Studio</h3>
+      <div class="meta">High ROI • Management • Service</div>
+      <div class="price" data-aed="1150000">1,150,000 AED</div>
+    </div>
+  </div>
+</section>
+
+<footer>© <span id="year"></span> ARENA REAL GROUP</footer>
+
+<script>
+var I18N={
+  ru:{title:"Премиальная недвижимость в Дубае",subtitle:"Подбор, переговоры, сопровождение сделки и инвестиционные решения.",listings:"Properties",call:"Contact Manager",view:"View Properties",map:"Dubai Map",map_open:"Открыть в Google Maps",map_pick:"Popular Areas",map_myloc:"My Location"},
+  en:{title:"Premium Real Estate in Dubai",subtitle:"Selection, negotiation, deal support and investment solutions.",listings:"Listings",call:"Call",view:"Open Dubai map",map:"Dubai Map",map_open:"Open in Google Maps",map_pick:"Popular areas",map_myloc:"My location"}
+};
+var AED_PER_USD=3.67;
+
+function formatNumber(n){
+  try{ return n.toLocaleString('en-US',{maximumFractionDigits:0}); }
+  catch(e){ return String(Math.round(n)); }
+}
+function updateLanguage(lang){
+  var d=I18N[lang]||I18N.ru;
+  document.documentElement.lang=lang;
+  document.getElementById("title").textContent=d.title;
+  document.getElementById("subtitle").textContent=d.subtitle;
+  document.getElementById("listingsTitle").textContent=d.listings;
+  document.getElementById("callBtn").textContent=d.call;
+  document.getElementById("viewBtn").textContent=d.view;
+  document.getElementById("ruBtn").classList.toggle("active",lang==="ru");
+  document.getElementById("enBtn").classList.toggle("active",lang==="en");
+  try{ if(typeof window!=="undefined" && window.savedArea){ updateAreaPreview(window.savedArea); } }catch(e){}
+  try{ var ls=document.getElementById("listingsSub"); if(ls && window.savedArea){ ls.textContent = (lang==="ru") ? ("Район: "+window.savedArea) : ("Area: "+window.savedArea);} }catch(e){}
+  try{ if(window.savedArea){ renderProperties(window.savedArea); } }catch(e){}
+  try{ localStorage.setItem("site_lang",lang); }catch(e){}
+}
+function updateCurrency(cur){
+  var prices=document.querySelectorAll(".price[data-aed]");
+  for(var i=0;i<prices.length;i++){
+    var el=prices[i];
+    var aed=parseFloat(el.getAttribute("data-aed"));
+    if(!isFinite(aed)) continue;
+    if(cur==="AED"){ el.textContent=formatNumber(aed)+" AED"; }
+    else { el.textContent="$"+formatNumber(aed/AED_PER_USD); }
+  }
+  document.getElementById("aedBtn").classList.toggle("active",cur==="AED");
+  document.getElementById("usdBtn").classList.toggle("active",cur==="USD");
+  try{ localStorage.setItem("site_currency",cur); }catch(e){}
+}
+var savedLang="ru", savedCur="AED";
+try{ savedLang=localStorage.getItem("site_lang")||"ru"; }catch(e){}
+try{ savedCur=localStorage.getItem("site_currency")||"AED"; }catch(e){}
+updateLanguage(savedLang);
+updateCurrency(savedCur);
+
+document.getElementById("ruBtn").onclick=function(){updateLanguage("ru");};
+document.getElementById("enBtn").onclick=function(){updateLanguage("en");};
+document.getElementById("aedBtn").onclick=function(){updateCurrency("AED");};
+document.getElementById("usdBtn").onclick=function(){updateCurrency("USD");};
+document.getElementById("year").textContent=(new Date()).getFullYear();
+
+
+// Map areas
+var AREA_MEDIA = {
+  "Downtown Dubai": {img:"assets/area_downtown.png", name:"Downtown Dubai", desc_ru:"Burj Khalifa • premium lifestyle • high demand", desc_en:"Burj Khalifa • premium lifestyle • high demand"},
+  "Dubai Marina": {img:"assets/area_marina.png", name:"Dubai Marina", desc_ru:"Waterfront • rental demand • vibrant community", desc_en:"Waterfront • rental demand • vibrant community"},
+  "Palm Jumeirah": {img:"assets/area_palm.png", name:"Palm Jumeirah", desc_ru:"Ultra-luxury • private beaches • iconic location", desc_en:"Ultra-luxury • private beaches • iconic location"},
+  "JBR": {img:"assets/area_jbr.png", name:"JBR", desc_ru:"Beach walk • lifestyle • short-term rental", desc_en:"Beach walk • lifestyle • short-term rental"},
+  "Business Bay": {img:"assets/area_business_bay.png", name:"Business Bay", desc_ru:"Downtown next door • investment hub • modern towers", desc_en:"Downtown next door • investment hub • modern towers"},
+  "DIFC": {img:"assets/area_difc.png", name:"DIFC", desc_ru:"Finance district • premium offices • top dining", desc_en:"Finance district • premium offices • top dining"},
+  "Jumeirah": {img:"assets/area_jumeirah.png", name:"Jumeirah", desc_ru:"Villas • family area • beach proximity", desc_en:"Villas • family area • beach proximity"},
+  "Bluewaters Island": {img:"assets/area_bluewaters.png", name:"Bluewaters Island", desc_ru:"Island living • Ain Dubai • premium views", desc_en:"Island living • Ain Dubai • premium views"},
+  "Dubai Hills Estate": {img:"assets/area_dubai_hills.png", name:"Dubai Hills Estate", desc_ru:"Green community • golf • family lifestyle", desc_en:"Green community • golf • family lifestyle"},
+  "Arabian Ranches": {img:"assets/area_arabian_ranches.png", name:"Arabian Ranches", desc_ru:"Villas • community living • calm & spacious", desc_en:"Villas • community living • calm & spacious"},
+  "Emirates Hills": {img:"assets/area_emirates_hills.png", name:"Emirates Hills", desc_ru:"Private mansions • elite area • golf views", desc_en:"Private mansions • elite area • golf views"},
+  "Jumeirah Village Circle": {img:"assets/area_jvc.png", name:"JVC", desc_ru:"Affordable premium • strong yields • growing area", desc_en:"Affordable premium • strong yields • growing area"},
+  "Jumeirah Lake Towers": {img:"assets/area_jlt.png", name:"JLT", desc_ru:"Lakeside towers • metro • rental stability", desc_en:"Lakeside towers • metro • rental stability"},
+  "Dubai Creek Harbour": {img:"assets/area_creek_harbour.png", name:"Dubai Creek Harbour", desc_ru:"New skyline • waterfront • long-term growth", desc_en:"New skyline • waterfront • long-term growth"}
+};
+
+function updateAreaPreview(query){
+  var m = AREA_MEDIA[query];
+  if(!m) return;
+  var img = document.getElementById('areaPreviewImg');
+  var name = document.getElementById('areaPreviewName');
+  var desc = document.getElementById('areaPreviewDesc');
+  if(img){ img.src = m.img; img.alt = m.name; }
+
+// Properties dataset (demo). You can replace with real objects later.
+var PROPERTIES = [
+  {area:"Downtown Dubai", title:"Downtown • 2BR", meta_ru:"Вид на Burj • Паркинг • Amenities", meta_en:"Burj view • Parking • Amenities", aed:4950000},
+  {area:"Downtown Dubai", title:"Downtown • 1BR", meta_ru:"Готовый • Центр • Инвестиции", meta_en:"Ready • Central • Investment", aed:2650000},
+  {area:"Dubai Marina", title:"Marina • Studio", meta_ru:"Высокий спрос • Сервис", meta_en:"High demand • Service", aed:1150000},
+  {area:"Dubai Marina", title:"Marina • 2BR", meta_ru:"Waterfront • Метро рядом", meta_en:"Waterfront • Near metro", aed:3450000},
+  {area:"Palm Jumeirah", title:"Palm • Villa", meta_ru:"Частный пляж • Luxury", meta_en:"Private beach • Luxury", aed:28900000},
+  {area:"Palm Jumeirah", title:"Palm • 2BR", meta_ru:"Sea view • Premium", meta_en:"Sea view • Premium", aed:8200000},
+  {area:"Business Bay", title:"Business Bay • 1BR", meta_ru:"Рядом Downtown • ROI", meta_en:"Near Downtown • ROI", aed:1850000},
+  {area:"DIFC", title:"DIFC • 2BR", meta_ru:"Премиум • Финансовый центр", meta_en:"Premium • Financial district", aed:7900000},
+  {area:"JBR", title:"JBR • 1BR", meta_ru:"Beach walk • Short-term", meta_en:"Beach walk • Short-term", aed:2300000},
+  {area:"Dubai Hills Estate", title:"Dubai Hills • 3BR", meta_ru:"Гольф • Family", meta_en:"Golf • Family", aed:6100000},
+  {area:"Jumeirah Village Circle", title:"JVC • 1BR", meta_ru:"Доходность • Growth", meta_en:"Yields • Growth", aed:980000},
+  {area:"Jumeirah Lake Towers", title:"JLT • 2BR", meta_ru:"Метро • Lakeside", meta_en:"Metro • Lakeside", aed:2700000},
+  {area:"Dubai Creek Harbour", title:"Creek Harbour • 2BR", meta_ru:"Waterfront • New skyline", meta_en:"Waterfront • New skyline", aed:3600000},
+  {area:"Bluewaters Island", title:"Bluewaters • 2BR", meta_ru:"Остров • Вид", meta_en:"Island • View", aed:9200000},
+  {area:"Arabian Ranches", title:"Arabian Ranches • Villa", meta_ru:"Комьюнити • Тишина", meta_en:"Community • Calm", aed:7400000},
+  {area:"Emirates Hills", title:"Emirates Hills • Mansion", meta_ru:"Ultra luxury • Elite", meta_en:"Ultra luxury • Elite", aed:65000000},
+  {area:"Jumeirah", title:"Jumeirah • Villa", meta_ru:"Семейный район • Beach", meta_en:"Family area • Beach", aed:12500000}
+];
+
+function renderProperties(area){
+  var grid = document.getElementById('propertyGrid');
+  if(!grid) return;
+
+  // Filter by area (if coordinates or unknown, show default few)
+  var list = [];
+  for(var i=0;i<PROPERTIES.length;i++){
+    if(PROPERTIES[i].area === area){ list.push(PROPERTIES[i]); }
+  }
+  if(list.length === 0){
+    // Show a curated default set
+    for(var j=0;j<PROPERTIES.length && list.length<6;j++){ list.push(PROPERTIES[j]); }
+  }
+
+  // Clear
+  grid.innerHTML = "";
+
+  for(var k=0;k<list.length;k++){
+    var p = list[k];
+    var card = document.createElement('div');
+    card.className = 'card';
+
+    // Optional image: try to map to existing demo property images (fallback to area image)
+    var img = document.createElement('img');
+    img.className = 'pimg';
+    // map by area to area image
+    try{
+      var media = (typeof AREA_MEDIA!=='undefined') ? AREA_MEDIA[p.area] : null;
+      img.src = media ? media.img : 'assets/property_1.png';
+    }catch(e){
+      img.src = 'assets/property_1.png';
+    }
+    img.alt = p.title;
+    img.loading = 'lazy';
+    card.appendChild(img);
+
+    var h3 = document.createElement('h3');
+    h3.textContent = p.title;
+    card.appendChild(h3);
+
+    var meta = document.createElement('div');
+    meta.className = 'meta';
+    var lang = (typeof currentLang!=='undefined') ? currentLang : 'en';
+    meta.textContent = (lang==='ru') ? p.meta_ru : p.meta_en;
+    card.appendChild(meta);
+
+    var price = document.createElement('div');
+    price.className = 'price';
+    price.setAttribute('data-aed', String(p.aed));
+    card.appendChild(price);
+
+    grid.appendChild(card);
+  }
+
+  // Apply currency formatting to newly created prices
+  try{ updateCurrency(currentCur || 'AED'); }catch(e){}
+}
+  if(name){ name.textContent = m.name; }
+  if(desc){
+    var lang = (typeof currentLang!=='undefined') ? currentLang : 'en';
+    desc.textContent = (lang==='ru') ? (m.desc_ru || '') : (m.desc_en || '');
+  }
+}
+
+var MAP_AREAS = [
+  {ru:"Downtown Dubai", en:"Downtown Dubai"},
+  {ru:"Dubai Marina", en:"Dubai Marina"},
+  {ru:"Palm Jumeirah", en:"Palm Jumeirah"},
+  {ru:"JBR (Jumeirah Beach Residence)", en:"JBR"},
+  {ru:"Business Bay", en:"Business Bay"},
+  {ru:"DIFC", en:"DIFC"},
+  {ru:"Jumeirah", en:"Jumeirah"},
+  {ru:"Bluewaters Island", en:"Bluewaters Island"},
+  {ru:"Dubai Hills Estate", en:"Dubai Hills Estate"},
+  {ru:"Arabian Ranches", en:"Arabian Ranches"},
+  {ru:"Emirates Hills", en:"Emirates Hills"},
+  {ru:"JVC (Jumeirah Village Circle)", en:"Jumeirah Village Circle"},
+  {ru:"JLT (Jumeirah Lake Towers)", en:"Jumeirah Lake Towers"},
+  {ru:"Dubai Creek Harbour", en:"Dubai Creek Harbour"}
+];
+
+function buildEmbedSrc(query){
+  try{
+    return "https://www.google.com/maps?q=" + encodeURIComponent(query + ", Dubai, UAE") + "&z=13&output=embed";
+  }catch(e){
+    return "https://www.google.com/maps?q=Dubai%2C%20UAE&z=11&output=embed";
+  }
+}
+
+
+function goToMyLocation(){
+  if(!navigator.geolocation){
+    alert((typeof currentLang!=='undefined' && currentLang==='ru') ? "Геолокация не поддерживается." : "Geolocation is not supported.");
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(function(pos){
+    var lat = pos.coords.latitude;
+    var lng = pos.coords.longitude;
+    var q = lat + "," + lng;
+    setMapArea(q);
+    try{ ARENA_TRACK && ARENA_TRACK('geo_loc_used'); }catch(e){}
+  }, function(){
+    var msg = (typeof currentLang!=='undefined' && currentLang==='ru')
+      ? "Не получилось получить геолокацию. Разреши доступ: Настройки → Safari → Геолокация (или Настройки → Конфиденциальность → Службы геолокации)."
+      : "Couldn't get location. Allow it in iOS Settings → Safari → Location (or Privacy → Location Services).";
+    alert(msg);
+  }, {enableHighAccuracy:true, timeout:8000, maximumAge:60000});
+}
+
+function setMapArea(query){
+  var iframe = document.querySelector('#map iframe');
+  if(iframe){ iframe.setAttribute('src', buildEmbedSrc(query)); }
+  try{ updateAreaPreview(query); }catch(e){}
+  try{
+    var ls=document.getElementById('listingsSub');
+    if(ls){
+      var lang=(typeof currentLang!=='undefined')?currentLang:'en';
+      ls.textContent = (lang==='ru') ? ('Район: ' + query) : ('Area: ' + query);
+    }
+  }catch(e){}
+  try{ renderProperties(query); }catch(e){}
+  var open = document.getElementById('openMapsBtn');
+  if(open){
+    open.setAttribute('href', "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(query + ", Dubai, UAE"));
+  }
+  // active chip
+  var chips = document.querySelectorAll('#areaChips .chip');
+  for(var i=0;i<chips.length;i++){
+    chips[i].classList.toggle('active', chips[i].getAttribute('data-area') === query);
+  }
+  try{ window.savedArea=query; localStorage.setItem('site_area', query); }catch(e){}
+}
+
+// Bind chips
+var chipWrap = document.getElementById('areaChips');
+if(chipWrap){
+  chipWrap.addEventListener('click', function(e){
+    var t = e.target;
+    if(t && t.classList.contains('chip')){
+      var q = t.getAttribute('data-area') || "Dubai";
+      setMapArea(q);
+    }
+  });
+}
+
+// Init saved area
+window.savedArea = "Dubai";
+try{ window.savedArea = localStorage.getItem('site_area') || "Dubai"; }catch(e){}
+setMapArea(window.savedArea);
+
+var myBtn = document.getElementById('myLocBtn');
+if(myBtn){ myBtn.addEventListener('click', goToMyLocation); }
+
+
+
+// Simple event tracking (GA4/Meta/TikTok)
+function ARENA_TRACK(name, params){
+  params = params || {};
+  try{ gtag && gtag('event', name, params); }catch(e){}
+  try{ fbq && fbq('trackCustom', name, params); }catch(e){}
+  try{ ttq && ttq.track && ttq.track(name, params); }catch(e){}
+}
+var _call=document.getElementById('callBtn');
+if(_call){ _call.addEventListener('click', function(){ ARENA_TRACK('lead_call_click'); }); }
+var _view=document.getElementById('viewBtn');
+if(_view){ _view.addEventListener('click', function(){ ARENA_TRACK('open_map_or_listings'); }); }
+
+// Capture UTM params for ad tracking
+(function(){
+  var q = window.location.search || '';
+  if(!q) return;
+  try{ localStorage.setItem('arena_utm', q); }catch(e){}
+})();
+
+// Service Worker
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('./sw.js').catch(function(){});
+  });
+}
+</script>
+
+
+<script>
+// Smooth scroll fallback
+if (!('scrollBehavior' in document.documentElement.style)) {
+  window.scrollTo = function(options){
+    if(typeof options === 'object'){
+      window.scroll(0, options.top || 0);
+    }
+  }
+}
+</script>
+
+
+<script>
+// Minimal compatibility shims (safe)
+window.requestAnimationFrame = window.requestAnimationFrame || function(cb){ return setTimeout(cb, 16); };
+window.cancelAnimationFrame = window.cancelAnimationFrame || clearTimeout;
+
+// Smooth scroll fallback
+(function(){
+  var supportsSmooth = false;
+  try{ supportsSmooth = ('scrollBehavior' in document.documentElement.style); }catch(e){}
+  if(!supportsSmooth){
+    var _scrollTo = window.scrollTo;
+    window.scrollTo = function(a,b){
+      if(typeof a === 'object' && a){ return _scrollTo(0, a.top || 0); }
+      return _scrollTo(a||0, b||0);
+    };
+  }
+})();
+</script>
+
+</body>
+</html>
